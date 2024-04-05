@@ -6,11 +6,14 @@
     <title>fitness</title>
 </head>
 <body>
-    <h1>is working!</h1>
-
-
-    <script>
-        console.log('hello world');
-    </script>
+    {% for biceps in bicep %}
+    
+    {{ biceps.exercise_name }}
+    <br>
+    {{ biceps.exercise_body_part }}
+    <br>
+    {{ biceps.exercise_description }}
+    <hr>    
+    {% endfor %}
 </body>
 </html>
